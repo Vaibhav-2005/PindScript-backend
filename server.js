@@ -20,17 +20,8 @@ app.post('/execute', (req, res) => {
   }
 });
 
-app.listen(5000, () => console.log('PindScript server listening on port 5000'));
+const PORT = process.env.PORT || 5000;
 
-
-
-
-// Above code works very fine before while do while shit
-
-
-
-
-
-
-
-
+app.listen(PORT, () => {
+  console.log(`PindScript server listening on port ${PORT}`);
+});
